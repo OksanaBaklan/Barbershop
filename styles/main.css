@@ -850,7 +850,7 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url(/images/gallery/Ellipse-gray.svg);
+  background-image: url(../images/gallery/Ellipse-gray.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -860,7 +860,7 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url(/images/gallery/Home-icon.svg);
+  background-image: url(../images/gallery/Home-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
 }/*# sourceMappingURL=main.css.map */
