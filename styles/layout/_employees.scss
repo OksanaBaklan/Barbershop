@@ -1,0 +1,64 @@
+.employees-section {
+    background-color: #f7f7f7;
+    width: max-content;
+    @media screen and (min-width:1200px){
+        width: 100%;
+    }
+  }
+  
+  .employees-section .title {
+    margin-bottom: 44px;
+  }
+  
+  .employees {
+display: flex;
+flex-wrap: wrap;
+margin-left: -30px;
+margin-top: -30px;
+    @media screen and (min-width: $desktop){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: no-wrap;
+        margin-left: -30px;
+        margin-top: -30px;
+    }
+  
+
+  }
+
+  
+  .employees-card {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+
+  }
+  
+  .employees-content-wrapper {
+    padding-top: 30px;
+    padding-left: 82px;
+    padding-right: 82px;
+  }
+  
+  .employees-name {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color-theme-light;
+    margin-bottom: 8px;
+  }
+  
+  .employees-position {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    margin-bottom: 0.5rem;
+  }
+  .employees-content-wrapper .social-list{
+    justify-content: center;
+  }

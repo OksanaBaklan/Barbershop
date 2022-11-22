@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbershop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/styles/slick/slick.css" />
+    <!-- CSS only -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="navigation">
+          <a class="logo link" href="/" aria-label="logo">
+            <svg class="logo-img" width="78" height="64">
+              <use href="./images/sprite.svg#logo"></use>
+            </svg>
+          </a>
+
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="nav-list list">
+              <li class="nav-list-item">
+                <a class="nav-list-link link" href="#About">About</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-list-link link" href="#Price"
+                  >Services and prices</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-list-link link" href="#Masters">Masters</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-list-link link" href="#Contacts">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <a class="contact-number link" href="tel:+495232565651"
+          >+495232565651</a
+        >
+
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg width="40px" height="40px" aria-label="Mobile menu switch">
+            <use class="icon-cross" href="./images/sprite.svg#close-icon"></use>
+            <use class="icon-menu" href="./images/sprite.svg#burger-2"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-left-side">
+            <ul class="social-links-list hero-social-links-list list">
+              <li class="social-links-list-item">
+                <a class="social-links-list-link link" href="#">Instagram</a>
+              </li>
+              <li class="social-links-list-item">
+                <a class="social-links-list-link link" href="#">Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hero-right-side">
+            <p class="overtitle overtitle-theme-dark" lang="en">
+              A hair salon for men in Berlin
+            </p>
+            <h1 class="main-title" lang="en">BarberShop</h1>
+            <p class="description description-theme-dark hero-description">
+              We are experts in trendy men's haircuts. We work quickly and
+              carefully.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT -->
+      <section class="about section" id="About">
+        <div class="container about-container">
+          <div class="about-left-side">
+            <ul class="about-gallery list">
+              <li class="about-gallery-item">
+                <img
+                  class="about-gallery-img"
+                  src="/images/about/about-img-1.jpg"
+                  alt="master shaves beard"
+                  width="270"
+                  height="445"
+                />
+              </li>
+              <li class="about-gallery-item">
+                <img
+                  class="about-gallery-img"
+                  src="/images/about/about-img-2.jpg"
+                  alt="master cuts"
+                  width="270"
+                  height="445"
+                />
+              </li>
+              <li class="about-gallery-item">
+                <img
+                  class="about-gallery-img"
+                  src="/images/about/about-img-3.jpg"
+                  alt="master cuts"
+                  width="270"
+                  height="445"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="about-right-side">
+            <h2 class="overtitle overtitle-theme-light">ABOUT US</h2>
+            <h3 class="title title-theme-light">
+              The best barbershop in your city
+            </h3>
+            <p class="description description-theme-light about-description">
+              If you want to add more confidence to your image, you are
+              definitely in the right place.
+            </p>
+            <p class="about-text">
+              We are a team that never rests on its laurels and yearns for
+              change. And once you fall into the hands of our master, you will
+              never be the same again. We are a team that is always on the same
+              wavelength with clients. Therefore, we are always ready to improve
+              everyone who comes to us!
+            </p>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary modal-btn modal-btn-theme-light services-modal-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+            online appointment
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section" id="Price">
+        <div class="container">
+          <p class="overtitle overtitle-theme-dark">
+            SPEND TIME IN THE COMPANY OF THE BEST ARTISTS
+          </p>
+          <h2 class="title title-theme-dark">Services and prices</h2>
+          <div class="services-list-wrapper">
+            <ul class="services-list list">
+              <li class="services-list-item">
+                <span class="services-list-name">Men's haircut</span
+                ><span class="services-list-price">15$</span>
+              </li>
+              <li class="services-list-item">
+                <span class="services-list-name">beard trim</span
+                ><span class="services-list-price">10$</span>
+              </li>
+              <li class="services-list-item">
+                <span class="services-list-name">Mustache haircut</span
+                ><span class="services-list-price">10$</span>
+              </li>
+              <li class="services-list-item">
+                <span class="services-list-name"
+                  >Shaving with straight razor</span
+                ><span class="services-list-price">10$</span>
+              </li>
+            </ul>
+            <ul class="services-list list">
+              <li class="services-list-item">
+                <span class="services-list-name">Intern's haircut</span
+                ><span class="services-list-price">8$</span>
+              </li>
+              <li class="services-list-item">
+                <span class="services-list-name">Haircut under the nozzle</span
+                ><span class="services-list-price">9$</span>
+              </li>
+              <li class="services-list-item">
+                <span class="services-list-name">Children's haircut</span
+                ><span class="services-list-price">10$</span>
+              </li>
+              <li class="services-list-item">
+                <span class="services-list-name">Gray hair camouflage</span
+                ><span class="services-list-price">10$</span>
+              </li>
+            </ul>
+          </div>
+          <button
+            class="modal-btn modal-btn-theme-dark services-modal-btn"
+            type="button"
+          >
+            online appointment
+          </button>
+        </div>
+      </section>
+
+      <!-- ADVANTAGES  -->
+      <section class="advantages section">
+        <div class="container advantages-container">
+          <div class="advantages-left-side">
+            <ul class="advantages-list list">
+              <li class="advantages-list-item">
+                <p class="advantages-list-quantity">600</p>
+                <p class="advantages-list-description">
+                  satisfied customers per day
+                </p>
+              </li>
+              <li class="advantages-list-item">
+                <p class="advantages-list-quantity">50</p>
+                <p class="advantages-list-description">
+                  Excellent Service Awards
+                </p>
+              </li>
+              <li class="advantages-list-item">
+                <p class="advantages-list-quantity">20</p>
+                <p class="advantages-list-description">
+                  The best masters of Berlin
+                </p>
+              </li>
+              <li class="advantages-list-item">
+                <p class="advantages-list-quantity">100</p>
+                <p class="advantages-list-description">
+                  Gifts for regular customers
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="advantages-right-side">
+            <p class="overtitle overtitle-theme-light">
+              old traditional school
+            </p>
+            <h2 class="title title-theme-light">Why do they come to us?</h2>
+            <p
+              class="description description-theme-light advantages-description"
+            >
+              Only good things are said about us. But it is better to see and
+              feel 1 time than to read 10 times.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EMPLOYEES -->
+      <section class="employees-section section" id="Masters">
+        <div class="container">
+          <p class="overtitle overtitle-theme-light">
+            FOR REAL ATMOSPHERE CONSISTS
+          </p>
+          <h2 class="title title-theme-light">Our masters</h2>
+          <ul class="employees list">
+            <li class="employees-card">
+              <img
+                class="employees-photo"
+                src="./images/masters/master-1.jpg"
+                alt="мастер стрижет клиента"
+              />
+              <div class="employees-content-wrapper">
+                <h3 class="employees-name" lang="en">John Smith</h3>
+                <p class="employees-position" lang="en">Extreme Barber</p>
+                <ul class="social-list list">
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="employees-card">
+              <img
+                class="employees-photo"
+                src="./images/masters/master-2.jpg"
+                alt="hairdresser cutting a client"
+              />
+              <div class="employees-content-wrapper">
+                <h3 class="employees-name" lang="en">Michele Doe</h3>
+                <p class="employees-position" lang="en">Extreme Barber</p>
+                <ul class="social-list list">
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="employees-card">
+              <img
+                class="employees-photo"
+                src="./images/masters/master-3.jpg"
+                alt="hairdresser cutting a client"
+              />
+              <div class="employees-content-wrapper">
+                <h3 class="employees-name" lang="en">Alan Black</h3>
+                <p class="employees-position" lang="en">Extreme Barber</p>
+                <ul class="social-list list">
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="reviews" class="reviews">
+        <div class="container reviews__container">
+          <h2 class="reviews__tittle--hidden visually-hidden">
+            Customer Reviews
+          </h2>
+
+          <div class="reviews__slider">
+            <div>
+              <picture class="reviews__photo">
+                <source srcset="images/gallery/gallery-img-1.jpg" />
+                <img
+                  src="/images/gallery/gallery-img-1.jpg"
+                  alt="customer photo"
+                />
+              </picture>
+
+              <div class="reviews__description-wrapper">
+                <p class="reviews__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing lelit.
+                  Placeat eum dignissimos perspiciatis incidunt error similique,
+                  ab enim. Ipsa doloremque cupiditate quibusdam ab nihil
+                  laudantium pariatur repellat doloribus neque. Architecto,
+                  distinctio!
+                </p>
+              </div>
+              <p class="reviews__person-name">Anton, Los Angeles</p>
+            </div>
+            <div>
+              <picture class="reviews__photo">
+                <source srcset="images/gallery/gallery-img-4.jpg" />
+                <img
+                  src="/images/gallery/gallery-img-4.jpg"
+                  alt="customer photo"
+                />
+              </picture>
+
+              <div class="reviews__description-wrapper">
+                <p class="reviews__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing lelit.
+                  Placeat eum dignissimos perspiciatis incidunt error similique,
+                  ab enim. Ipsa doloremque cupiditate quibusdam ab nihil
+                  laudantium pariatur repellat doloribus neque. Architecto,
+                  distinctio!
+                </p>
+              </div>
+              <p class="reviews__person-name">Alex, Los Angeles</p>
+            </div>
+            <div>
+              <picture class="reviews__photo">
+                <source srcset="images/gallery/gallery-img-2.jpg" />
+                <img
+                  src="/images/gallery/gallery-img-2.jpg"
+                  alt="customer photo"
+                />
+              </picture>
+              <div class="reviews__description-wrapper">
+                <p class="reviews__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                  fugit atque enim aperiam odio, unde labore saepe tempore
+                  dolorem ab dolorum nulla numquam iste eaque iure culpa cum,
+                  voluptates nesciunt!
+                </p>
+              </div>
+              <p class="reviews__person-name">Mark, Washington</p>
+            </div>
+            <div>
+              <picture class="reviews__photo">
+                <source srcset="images/gallery/gallery-img-3.jpg" />
+                <img
+                  src="/images/gallery/gallery-img-3.jpg"
+                  alt="customer photo"
+                />
+              </picture>
+              <div class="reviews__description-wrapper">
+                <p class="reviews__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisic Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Beatae, eos harum
+                  aliquid reiciendis impedit error pariatur dolorem maiores a
+                  libero ad quod recusandae!ur! Esse.
+                </p>
+              </div>
+              <p class="reviews__person-name">Adam, Brooklyn</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <!-- JavaScript Bundle with Popper -->
+  <!-- <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script> -->
+  <script src="/js/menu.js"></script>
+  <script src="/js/modal.js"></script>
+  <script
+    type="text/javascript"
+    src="//code.jquery.com/jquery-1.11.0.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js"></script>
+
+  <script type="text/javascript" src="/styles/slick/slick.min.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="./js/jquery.spincrement.min.js"></script>
+</html>

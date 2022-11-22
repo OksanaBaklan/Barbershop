@@ -1,0 +1,124 @@
+
+.services {
+   width: max-content;
+    background-image: url('../../images/services/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #111319;
+    @media screen and (min-width:1200px){
+        width: 100%;
+    }
+ 
+  }
+  
+  .services-list-wrapper {
+    display: flex;
+  }
+  
+  .services-list {
+    flex-basis: 50%;
+    padding: 30px 40px;
+    margin-bottom: 50px;
+  }
+  
+  .services-list:first-child {
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+  
+  .services-list:last-child {
+    background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
+  
+  .services-list-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .services-list-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .services-list-name,
+  .services-list-price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: rgb(rgb(255, 255, 255), 0.6);
+  }
+  
+  .services-modal-btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+
+/* ========= START ADVANTAGES ========= */
+.advantages-container {
+
+    @media screen and (min-width:1200px){
+        display: flex;
+        justify-content: space-between;
+    }
+  
+  }
+  
+  .advantages-left-side,
+  .advantages-right-side {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .advantages-right-side{
+    padding-left: 34px;
+    @media screen and (min-width:1200px){
+        padding-left: 0;
+    }
+  }
+  .advantages-list {
+    display: flex;
+   flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width:45rem;
+    margin: 0 0 0 auto;
+    @media screen and (min-width:1200px){
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 370px;
+    }
+
+  }
+  
+  .advantages-list-item {
+    width: 170px;
+    min-height: 134px;
+    padding: 21px;
+    background-color: #f7f7f7;
+  }
+  
+  .advantages-list-item:nth-child(even) {
+    margin-top: 30px;
+  }
+  
+  .advantages-list-quantity {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $secondary-text-color-theme-light;
+    margin-bottom: 6px;
+  }
+  
+  .advantages-list-description {
+    font-weight: 600;
+    font-size: 0.7rem;
+    line-height: 1.36;
+    text-align: center;
+    color: $secondary-text-color-theme-light;
+
+  }
+  
+  .advantages-description {
+    max-width: 460px;
+  }
+  /* ========= END ADVANTAGES ========= */  
