@@ -1,0 +1,73 @@
+.contacts{
+   background-color: $background-accent-light;
+width: max-content;
+@media screen and (min-width: $desktop){
+    width: 100%;
+    
+}
+}
+
+
+.contacts-card__item{
+background:white;
+box-shadow: 0px 8px 30px rgba(21, 20, 21, 0.1);
+border-radius: 24px;
+width: 50rem;
+height: 100%;
+padding: 3rem 2rem;
+margin: 0 auto;
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.contacts-card__type {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.8;
+    letter-spacing: .04em;
+    color: $primary-text-color-theme-light;
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 16px;
+    margin-bottom: 3rem;
+    @media screen and (min-width: $desktop){
+        font-size: 1.5rem;    }
+
+}
+.contacts-card__description {
+    line-height: 1.5;
+    letter-spacing: .03em;
+    color: #907e82;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;  
+}
+
+.schedule-list {
+    margin-bottom: 25px;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.schedule-list__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.schedule-list__days, .schedule-list__time  {
+    font-family: DM Sans,sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.83;
+}
+
+.schedule-list__time {
+    color: $accent-color;
+    font-size: 1.5rem;  
+}
+
+
+.connection-list__link {
+    font-family: DM Sans,sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;      line-height: 1.5;
+    color: #907e82;
+}
