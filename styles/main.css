@@ -744,7 +744,7 @@ img {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  background-image: url("../../images/services/bg.png");
+  background-image: url("../images/services/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #111319;
